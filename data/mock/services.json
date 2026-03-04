@@ -1,0 +1,157 @@
+{
+  "data": {
+    "nodeServices": {
+      "__typename": "NodeServiceConnection",
+      "nodes": [
+        {
+          "__typename": "NodeService",
+          "id": "service-wealth",
+          "title": "Wealth Management",
+          "path": "/services/wealth-management",
+          "body": {
+            "processed": "<p>Our wealth management service provides a holistic approach to growing and preserving your assets. We combine sophisticated investment strategies with comprehensive financial planning tailored to your unique goals.</p><h2>Our Approach</h2><ul><li>Custom portfolio construction based on your goals and risk tolerance</li><li>Diversification across asset classes, sectors, and geographies</li><li>Regular rebalancing and tax-loss harvesting</li><li>Quarterly performance reviews and strategy adjustments</li><li>Access to institutional-quality investments</li></ul><h2>Investment Philosophy</h2><p>We believe in a disciplined, evidence-based approach to investing. Our portfolios are built on academic research and designed to capture long-term market returns while managing downside risk.</p>",
+            "summary": "Our wealth management service provides a holistic approach to growing and preserving your assets. We combine sophisticated investment strategies with comprehensive financial planning tailored to your "
+          },
+          "minimumInvestment": "$250,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+            "alt": "Investment portfolio charts",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-retirement",
+          "title": "Retirement Planning",
+          "path": "/services/retirement-planning",
+          "body": {
+            "processed": "<p>Whether retirement is decades away or just around the corner, our advisors create detailed plans to ensure you can live comfortably and pursue your passions in your post-career years.</p><h2>Planning Process</h2><ul><li>Retirement income needs analysis</li><li>Social Security optimization strategies</li><li>401(k), IRA, and Roth conversion planning</li><li>Healthcare cost projections and Medicare planning</li><li>Withdrawal strategy to minimize taxes</li></ul><h2>Ongoing Management</h2><p>Your retirement plan evolves with you. We conduct annual reviews and adjust your strategy as your circumstances and goals change.</p>",
+            "summary": "Whether retirement is decades away or just around the corner, our advisors create detailed plans to ensure you can live comfortably and pursue your passions in your post-career years.Planning ProcessR"
+          },
+          "minimumInvestment": "$100,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
+            "alt": "Couple planning retirement",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-estate",
+          "title": "Estate Planning",
+          "path": "/services/estate-planning",
+          "body": {
+            "processed": "<p>Protect your legacy with thoughtful estate planning. We work with your attorneys and CPAs to create a comprehensive plan that ensures your wealth transfers according to your wishes.</p><h2>Estate Planning Services</h2><ul><li>Trust and estate analysis</li><li>Charitable giving strategies</li><li>Business succession planning</li><li>Generational wealth transfer</li><li>Beneficiary designation reviews</li></ul><h2>Coordination</h2><p>We coordinate with your legal and tax advisors to ensure all elements of your estate plan work together seamlessly.</p>",
+            "summary": "Protect your legacy with thoughtful estate planning. We work with your attorneys and CPAs to create a comprehensive plan that ensures your wealth transfers according to your wishes.Estate Planning Ser"
+          },
+          "minimumInvestment": "$500,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+            "alt": "Estate planning documents",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-tax",
+          "title": "Tax Optimization",
+          "path": "/services/tax-optimization",
+          "body": {
+            "processed": "<p>Minimize your tax burden with proactive tax planning strategies. We look beyond simple deductions to find opportunities that reduce your taxes year after year.</p><h2>Tax Strategies</h2><ul><li>Tax-loss harvesting across portfolios</li><li>Roth conversion analysis and planning</li><li>Charitable giving optimization (donor-advised funds, QCDs)</li><li>Capital gains management</li><li>Tax-efficient asset location strategies</li></ul><h2>Results</h2><p>Our clients typically save thousands in taxes annually through proactive planning. We work closely with your CPA to implement these strategies effectively.</p>",
+            "summary": "Minimize your tax burden with proactive tax planning strategies. We look beyond simple deductions to find opportunities that reduce your taxes year after year.Tax StrategiesTax-loss harvesting across "
+          },
+          "minimumInvestment": "$100,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+            "alt": "Tax planning documents",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

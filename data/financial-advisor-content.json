@@ -1,0 +1,220 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section, statistics, and call-to-action areas",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string", "description": "Main headline in the hero section" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string", "description": "Secondary text below the hero title" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text", "description": "Longer descriptive text for the hero section" },
+        { "id": "stats_items", "label": "Statistics", "type": "paragraph(stat_item)[]", "description": "Key metrics and statistics" },
+        { "id": "featured_items_title", "label": "Featured Items Title", "type": "string", "description": "Heading for the featured services section" },
+        { "id": "cta_title", "label": "CTA Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "service",
+      "label": "Service",
+      "description": "Financial advisory services offered",
+      "body": true,
+      "fields": [
+        { "id": "minimum_investment", "label": "Minimum Investment", "type": "string", "description": "Minimum investment amount for this service" },
+        { "id": "image", "label": "Featured Image", "type": "image", "description": "Main image for the service" }
+      ]
+    },
+    {
+      "bundle": "advisor",
+      "label": "Advisor",
+      "description": "Financial advisors and wealth managers",
+      "body": true,
+      "fields": [
+        { "id": "specialty", "label": "Specialty", "type": "string", "description": "Area of financial expertise" },
+        { "id": "email", "label": "Email", "type": "string", "description": "Professional email address" },
+        { "id": "phone", "label": "Phone", "type": "string", "description": "Contact phone number" },
+        { "id": "photo", "label": "Photo", "type": "image", "description": "Professional headshot" },
+        { "id": "certifications", "label": "Certifications", "type": "string", "description": "Professional certifications" },
+        { "id": "experience_years", "label": "Years of Experience", "type": "integer", "description": "Number of years in financial services" }
+      ]
+    },
+    {
+      "bundle": "resource",
+      "label": "Resource",
+      "description": "Market insights, guides, and financial education",
+      "body": true,
+      "fields": [
+        { "id": "resource_category", "label": "Resource Category", "type": "string", "description": "Category for the resource" },
+        { "id": "image", "label": "Featured Image", "type": "image", "description": "Main image for the resource" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, contact, policies, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "Individual statistic with number and label",
+      "fields": [
+        { "id": "number", "label": "Number", "type": "string!", "description": "Statistic value" },
+        { "id": "label", "label": "Label", "type": "string!", "description": "Statistic label" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-1", "type": "paragraph.stat_item",
+      "values": { "number": "$2.1B", "label": "Assets Under Management" }
+    },
+    {
+      "id": "stat-2", "type": "paragraph.stat_item",
+      "values": { "number": "850+", "label": "Client Families" }
+    },
+    {
+      "id": "stat-3", "type": "paragraph.stat_item",
+      "values": { "number": "98%", "label": "Client Retention" }
+    },
+    {
+      "id": "stat-4", "type": "paragraph.stat_item",
+      "values": { "number": "25+", "label": "Years of Service" }
+    },
+    {
+      "id": "homepage", "type": "node.homepage", "path": "/homepage",
+      "values": {
+        "title": "Summit Wealth Advisors Homepage",
+        "hero_title": "Your Financial Future, Elevated",
+        "hero_subtitle": "Summit Wealth Advisors",
+        "hero_description": "<p>Fee-only fiduciary financial advisors dedicated to building and protecting your wealth through personalized strategies, disciplined investment management, and comprehensive financial planning.</p>",
+        "stats_items": ["@stat-1", "@stat-2", "@stat-3", "@stat-4"],
+        "featured_items_title": "How We Help",
+        "cta_title": "Start Building Your Financial Future",
+        "cta_description": "<p>Schedule a complimentary consultation with one of our advisors. We will review your current situation and outline a clear path to your financial goals.</p>",
+        "cta_primary": "Schedule a Meeting",
+        "cta_secondary": "Our Services"
+      }
+    },
+    {
+      "id": "service-wealth", "type": "node.service", "path": "/services/wealth-management",
+      "values": {
+        "title": "Wealth Management",
+        "body": "<p>Our wealth management service provides a holistic approach to growing and preserving your assets. We combine sophisticated investment strategies with comprehensive financial planning tailored to your unique goals.</p><h2>Our Approach</h2><ul><li>Custom portfolio construction based on your goals and risk tolerance</li><li>Diversification across asset classes, sectors, and geographies</li><li>Regular rebalancing and tax-loss harvesting</li><li>Quarterly performance reviews and strategy adjustments</li><li>Access to institutional-quality investments</li></ul><h2>Investment Philosophy</h2><p>We believe in a disciplined, evidence-based approach to investing. Our portfolios are built on academic research and designed to capture long-term market returns while managing downside risk.</p>",
+        "minimum_investment": "$250,000",
+        "image": { "uri": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80", "alt": "Investment portfolio charts", "title": "Wealth Management" }
+      }
+    },
+    {
+      "id": "service-retirement", "type": "node.service", "path": "/services/retirement-planning",
+      "values": {
+        "title": "Retirement Planning",
+        "body": "<p>Whether retirement is decades away or just around the corner, our advisors create detailed plans to ensure you can live comfortably and pursue your passions in your post-career years.</p><h2>Planning Process</h2><ul><li>Retirement income needs analysis</li><li>Social Security optimization strategies</li><li>401(k), IRA, and Roth conversion planning</li><li>Healthcare cost projections and Medicare planning</li><li>Withdrawal strategy to minimize taxes</li></ul><h2>Ongoing Management</h2><p>Your retirement plan evolves with you. We conduct annual reviews and adjust your strategy as your circumstances and goals change.</p>",
+        "minimum_investment": "$100,000",
+        "image": { "uri": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80", "alt": "Couple planning retirement", "title": "Retirement Planning" }
+      }
+    },
+    {
+      "id": "service-estate", "type": "node.service", "path": "/services/estate-planning",
+      "values": {
+        "title": "Estate Planning",
+        "body": "<p>Protect your legacy with thoughtful estate planning. We work with your attorneys and CPAs to create a comprehensive plan that ensures your wealth transfers according to your wishes.</p><h2>Estate Planning Services</h2><ul><li>Trust and estate analysis</li><li>Charitable giving strategies</li><li>Business succession planning</li><li>Generational wealth transfer</li><li>Beneficiary designation reviews</li></ul><h2>Coordination</h2><p>We coordinate with your legal and tax advisors to ensure all elements of your estate plan work together seamlessly.</p>",
+        "minimum_investment": "$500,000",
+        "image": { "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80", "alt": "Estate planning documents", "title": "Estate Planning" }
+      }
+    },
+    {
+      "id": "service-tax", "type": "node.service", "path": "/services/tax-optimization",
+      "values": {
+        "title": "Tax Optimization",
+        "body": "<p>Minimize your tax burden with proactive tax planning strategies. We look beyond simple deductions to find opportunities that reduce your taxes year after year.</p><h2>Tax Strategies</h2><ul><li>Tax-loss harvesting across portfolios</li><li>Roth conversion analysis and planning</li><li>Charitable giving optimization (donor-advised funds, QCDs)</li><li>Capital gains management</li><li>Tax-efficient asset location strategies</li></ul><h2>Results</h2><p>Our clients typically save thousands in taxes annually through proactive planning. We work closely with your CPA to implement these strategies effectively.</p>",
+        "minimum_investment": "$100,000",
+        "image": { "uri": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80", "alt": "Tax planning documents", "title": "Tax Optimization" }
+      }
+    },
+    {
+      "id": "advisor-catherine", "type": "node.advisor", "path": "/advisors/catherine-sterling",
+      "values": {
+        "title": "Catherine Sterling",
+        "body": "<p>Catherine founded Summit Wealth Advisors with the vision of providing institutional-quality financial advice to individuals and families. She specializes in comprehensive wealth management for high-net-worth clients and brings a disciplined, research-based approach to investing.</p>",
+        "specialty": "Wealth Management & Portfolio Strategy",
+        "email": "catherine@summitwealthadvisors.com",
+        "phone": "(555) 456-7890",
+        "photo": { "uri": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80", "alt": "Catherine Sterling, Founder", "title": "Catherine Sterling" },
+        "certifications": "CFP, CFA, CIMA",
+        "experience_years": 28
+      }
+    },
+    {
+      "id": "advisor-richard", "type": "node.advisor", "path": "/advisors/richard-hayes",
+      "values": {
+        "title": "Richard Hayes",
+        "body": "<p>Richard leads our retirement planning practice. He helps clients approaching retirement create detailed income plans, optimize Social Security benefits, and navigate the transition from accumulation to distribution. His clients value his thorough approach and clear communication style.</p>",
+        "specialty": "Retirement Planning & Income Strategy",
+        "email": "richard@summitwealthadvisors.com",
+        "phone": "(555) 456-7891",
+        "photo": { "uri": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80", "alt": "Richard Hayes, Senior Advisor", "title": "Richard Hayes" },
+        "certifications": "CFP, ChFC",
+        "experience_years": 20
+      }
+    },
+    {
+      "id": "advisor-anika", "type": "node.advisor", "path": "/advisors/anika-patel",
+      "values": {
+        "title": "Anika Patel",
+        "body": "<p>Anika specializes in estate planning and tax optimization for families with complex financial situations. She works closely with attorneys and CPAs to create integrated strategies that protect wealth across generations. Her quantitative background enables precise tax planning analysis.</p>",
+        "specialty": "Estate Planning & Tax Strategy",
+        "email": "anika@summitwealthadvisors.com",
+        "phone": "(555) 456-7892",
+        "photo": { "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80", "alt": "Anika Patel, Advisor", "title": "Anika Patel" },
+        "certifications": "CFP, CPA/PFS",
+        "experience_years": 15
+      }
+    },
+    {
+      "id": "resource-market-outlook", "type": "node.resource", "path": "/resources/market-outlook-2026",
+      "values": {
+        "title": "2026 Market Outlook",
+        "body": "<p>Our investment committee shares their perspective on market conditions, economic trends, and portfolio positioning for the year ahead.</p><h2>Key Themes</h2><ul><li>Interest rate environment and bond market opportunities</li><li>US equity market valuations and earnings growth</li><li>International diversification benefits</li><li>Alternative investment opportunities</li></ul><p>We encourage clients to focus on long-term goals rather than short-term market movements. Your portfolio is designed to weather various market conditions.</p>",
+        "resource_category": "Market Insights",
+        "image": { "uri": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80", "alt": "Financial market charts", "title": "2026 Market Outlook" }
+      }
+    },
+    {
+      "id": "resource-retirement-mistakes", "type": "node.resource", "path": "/resources/retirement-planning-mistakes",
+      "values": {
+        "title": "5 Retirement Planning Mistakes to Avoid",
+        "body": "<p>Even diligent savers can make mistakes that derail their retirement plans. Here are the most common pitfalls we help clients avoid.</p><h2>Common Mistakes</h2><ul><li><strong>Starting too late</strong> - The power of compounding diminishes with each year you delay</li><li><strong>Underestimating healthcare costs</strong> - Plan for $300,000+ per couple in retirement healthcare</li><li><strong>Taking Social Security too early</strong> - Waiting can increase benefits by up to 77%</li><li><strong>Ignoring inflation</strong> - Your purchasing power will decline without proper planning</li><li><strong>No withdrawal strategy</strong> - The order in which you tap accounts matters for taxes</li></ul><p>Schedule a review with one of our advisors to ensure you are on the right track.</p>",
+        "resource_category": "Retirement",
+        "image": { "uri": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80", "alt": "Retirement savings concept", "title": "Retirement Planning Mistakes" }
+      }
+    },
+    {
+      "id": "resource-estate-basics", "type": "node.resource", "path": "/resources/estate-planning-basics",
+      "values": {
+        "title": "Estate Planning Essentials",
+        "body": "<p>Estate planning is not just for the ultra-wealthy. Everyone needs a plan to protect their family and assets. Here are the essential documents and strategies to consider.</p><h2>Essential Documents</h2><ul><li><strong>Will</strong> - Directs how your assets are distributed</li><li><strong>Revocable Trust</strong> - Avoids probate and provides privacy</li><li><strong>Power of Attorney</strong> - Designates someone to manage your finances</li><li><strong>Healthcare Directive</strong> - Specifies your medical care wishes</li></ul><h2>Beyond the Basics</h2><p>For larger estates, consider irrevocable trusts, charitable strategies, and business succession planning. Our advisors can help you determine which tools are right for your situation.</p>",
+        "resource_category": "Estate Planning",
+        "image": { "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80", "alt": "Legal documents and planning", "title": "Estate Planning Essentials" }
+      }
+    },
+    {
+      "id": "about-page", "type": "node.page", "path": "/about",
+      "values": {
+        "title": "About Summit Wealth Advisors",
+        "body": "<p>Summit Wealth Advisors was founded on the belief that everyone deserves access to sophisticated financial advice. As a fee-only, fiduciary advisory firm, we are legally obligated to put your interests first.</p><h2>Our Fiduciary Commitment</h2><p>Unlike brokers who earn commissions, we charge a transparent fee based on assets under management. This ensures our advice is always aligned with your best interests.</p><h2>Our Values</h2><ul><li><strong>Fiduciary First</strong> - Your interests always come before ours</li><li><strong>Evidence-Based</strong> - We rely on academic research, not market predictions</li><li><strong>Transparency</strong> - Clear fees, honest communication, no hidden costs</li><li><strong>Long-Term Focus</strong> - We build plans for decades, not quarters</li></ul>"
+      }
+    },
+    {
+      "id": "contact-page", "type": "node.page", "path": "/contact",
+      "values": {
+        "title": "Schedule a Meeting",
+        "body": "<p>We offer a complimentary initial consultation to understand your financial situation and goals. There is no obligation and no pressure.</p><h2>Office Location</h2><p>Summit Wealth Advisors<br/>321 Wealth Avenue, 15th Floor<br/>Chicago, IL 60601</p><h2>Hours</h2><p>Monday - Friday: 8:00 AM - 5:00 PM<br/>Evening appointments available by request</p><h2>Contact</h2><p>Phone: (555) 456-7890<br/>Email: info@summitwealthadvisors.com</p>"
+      }
+    }
+  ]
+}

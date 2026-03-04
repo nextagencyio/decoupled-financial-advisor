@@ -1,0 +1,545 @@
+{
+  "/homepage": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Summit Wealth Advisors Homepage",
+          "path": "/homepage",
+          "heroTitle": "Your Financial Future, Elevated",
+          "heroSubtitle": "Summit Wealth Advisors",
+          "heroDescription": {
+            "processed": "<p>Fee-only fiduciary financial advisors dedicated to building and protecting your wealth through personalized strategies, disciplined investment management, and comprehensive financial planning.</p>",
+            "summary": "Fee-only fiduciary financial advisors dedicated to building and protecting your wealth through personalized strategies, disciplined investment management, and comprehensive financial planning."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-1",
+              "title": "",
+              "number": "$2.1B",
+              "label": "Assets Under Management"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-2",
+              "title": "",
+              "number": "850+",
+              "label": "Client Families"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-3",
+              "title": "",
+              "number": "98%",
+              "label": "Client Retention"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-4",
+              "title": "",
+              "number": "25+",
+              "label": "Years of Service"
+            }
+          ],
+          "featuredItemsTitle": "How We Help",
+          "ctaTitle": "Start Building Your Financial Future",
+          "ctaDescription": {
+            "processed": "<p>Schedule a complimentary consultation with one of our advisors. We will review your current situation and outline a clear path to your financial goals.</p>",
+            "summary": "Schedule a complimentary consultation with one of our advisors. We will review your current situation and outline a clear path to your financial goals."
+          },
+          "ctaPrimary": "Schedule a Meeting",
+          "ctaSecondary": "Our Services"
+        }
+      }
+    }
+  },
+  "/services/wealth-management": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeService",
+          "id": "service-wealth",
+          "title": "Wealth Management",
+          "path": "/services/wealth-management",
+          "body": {
+            "processed": "<p>Our wealth management service provides a holistic approach to growing and preserving your assets. We combine sophisticated investment strategies with comprehensive financial planning tailored to your unique goals.</p><h2>Our Approach</h2><ul><li>Custom portfolio construction based on your goals and risk tolerance</li><li>Diversification across asset classes, sectors, and geographies</li><li>Regular rebalancing and tax-loss harvesting</li><li>Quarterly performance reviews and strategy adjustments</li><li>Access to institutional-quality investments</li></ul><h2>Investment Philosophy</h2><p>We believe in a disciplined, evidence-based approach to investing. Our portfolios are built on academic research and designed to capture long-term market returns while managing downside risk.</p>",
+            "summary": "Our wealth management service provides a holistic approach to growing and preserving your assets. We combine sophisticated investment strategies with comprehensive financial planning tailored to your "
+          },
+          "minimumInvestment": "$250,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+            "alt": "Investment portfolio charts",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/services/retirement-planning": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeService",
+          "id": "service-retirement",
+          "title": "Retirement Planning",
+          "path": "/services/retirement-planning",
+          "body": {
+            "processed": "<p>Whether retirement is decades away or just around the corner, our advisors create detailed plans to ensure you can live comfortably and pursue your passions in your post-career years.</p><h2>Planning Process</h2><ul><li>Retirement income needs analysis</li><li>Social Security optimization strategies</li><li>401(k), IRA, and Roth conversion planning</li><li>Healthcare cost projections and Medicare planning</li><li>Withdrawal strategy to minimize taxes</li></ul><h2>Ongoing Management</h2><p>Your retirement plan evolves with you. We conduct annual reviews and adjust your strategy as your circumstances and goals change.</p>",
+            "summary": "Whether retirement is decades away or just around the corner, our advisors create detailed plans to ensure you can live comfortably and pursue your passions in your post-career years.Planning ProcessR"
+          },
+          "minimumInvestment": "$100,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
+            "alt": "Couple planning retirement",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/services/estate-planning": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeService",
+          "id": "service-estate",
+          "title": "Estate Planning",
+          "path": "/services/estate-planning",
+          "body": {
+            "processed": "<p>Protect your legacy with thoughtful estate planning. We work with your attorneys and CPAs to create a comprehensive plan that ensures your wealth transfers according to your wishes.</p><h2>Estate Planning Services</h2><ul><li>Trust and estate analysis</li><li>Charitable giving strategies</li><li>Business succession planning</li><li>Generational wealth transfer</li><li>Beneficiary designation reviews</li></ul><h2>Coordination</h2><p>We coordinate with your legal and tax advisors to ensure all elements of your estate plan work together seamlessly.</p>",
+            "summary": "Protect your legacy with thoughtful estate planning. We work with your attorneys and CPAs to create a comprehensive plan that ensures your wealth transfers according to your wishes.Estate Planning Ser"
+          },
+          "minimumInvestment": "$500,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+            "alt": "Estate planning documents",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/services/tax-optimization": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeService",
+          "id": "service-tax",
+          "title": "Tax Optimization",
+          "path": "/services/tax-optimization",
+          "body": {
+            "processed": "<p>Minimize your tax burden with proactive tax planning strategies. We look beyond simple deductions to find opportunities that reduce your taxes year after year.</p><h2>Tax Strategies</h2><ul><li>Tax-loss harvesting across portfolios</li><li>Roth conversion analysis and planning</li><li>Charitable giving optimization (donor-advised funds, QCDs)</li><li>Capital gains management</li><li>Tax-efficient asset location strategies</li></ul><h2>Results</h2><p>Our clients typically save thousands in taxes annually through proactive planning. We work closely with your CPA to implement these strategies effectively.</p>",
+            "summary": "Minimize your tax burden with proactive tax planning strategies. We look beyond simple deductions to find opportunities that reduce your taxes year after year.Tax StrategiesTax-loss harvesting across "
+          },
+          "minimumInvestment": "$100,000",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+            "alt": "Tax planning documents",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/advisors/catherine-sterling": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeAdvisor",
+          "id": "advisor-catherine",
+          "title": "Catherine Sterling",
+          "path": "/advisors/catherine-sterling",
+          "body": {
+            "processed": "<p>Catherine founded Summit Wealth Advisors with the vision of providing institutional-quality financial advice to individuals and families. She specializes in comprehensive wealth management for high-net-worth clients and brings a disciplined, research-based approach to investing.</p>",
+            "summary": "Catherine founded Summit Wealth Advisors with the vision of providing institutional-quality financial advice to individuals and families. She specializes in comprehensive wealth management for high-ne"
+          },
+          "specialty": "Wealth Management & Portfolio Strategy",
+          "email": "catherine@summitwealthadvisors.com",
+          "phone": "(555) 456-7890",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+            "alt": "Catherine Sterling, Founder",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "certifications": "CFP, CFA, CIMA",
+          "experienceYears": 28
+        }
+      }
+    }
+  },
+  "/advisors/richard-hayes": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeAdvisor",
+          "id": "advisor-richard",
+          "title": "Richard Hayes",
+          "path": "/advisors/richard-hayes",
+          "body": {
+            "processed": "<p>Richard leads our retirement planning practice. He helps clients approaching retirement create detailed income plans, optimize Social Security benefits, and navigate the transition from accumulation to distribution. His clients value his thorough approach and clear communication style.</p>",
+            "summary": "Richard leads our retirement planning practice. He helps clients approaching retirement create detailed income plans, optimize Social Security benefits, and navigate the transition from accumulation t"
+          },
+          "specialty": "Retirement Planning & Income Strategy",
+          "email": "richard@summitwealthadvisors.com",
+          "phone": "(555) 456-7891",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+            "alt": "Richard Hayes, Senior Advisor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "certifications": "CFP, ChFC",
+          "experienceYears": 20
+        }
+      }
+    }
+  },
+  "/advisors/anika-patel": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeAdvisor",
+          "id": "advisor-anika",
+          "title": "Anika Patel",
+          "path": "/advisors/anika-patel",
+          "body": {
+            "processed": "<p>Anika specializes in estate planning and tax optimization for families with complex financial situations. She works closely with attorneys and CPAs to create integrated strategies that protect wealth across generations. Her quantitative background enables precise tax planning analysis.</p>",
+            "summary": "Anika specializes in estate planning and tax optimization for families with complex financial situations. She works closely with attorneys and CPAs to create integrated strategies that protect wealth "
+          },
+          "specialty": "Estate Planning & Tax Strategy",
+          "email": "anika@summitwealthadvisors.com",
+          "phone": "(555) 456-7892",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+            "alt": "Anika Patel, Advisor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "certifications": "CFP, CPA/PFS",
+          "experienceYears": 15
+        }
+      }
+    }
+  },
+  "/resources/market-outlook-2026": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeResource",
+          "id": "resource-market-outlook",
+          "title": "2026 Market Outlook",
+          "path": "/resources/market-outlook-2026",
+          "body": {
+            "processed": "<p>Our investment committee shares their perspective on market conditions, economic trends, and portfolio positioning for the year ahead.</p><h2>Key Themes</h2><ul><li>Interest rate environment and bond market opportunities</li><li>US equity market valuations and earnings growth</li><li>International diversification benefits</li><li>Alternative investment opportunities</li></ul><p>We encourage clients to focus on long-term goals rather than short-term market movements. Your portfolio is designed to weather various market conditions.</p>",
+            "summary": "Our investment committee shares their perspective on market conditions, economic trends, and portfolio positioning for the year ahead.Key ThemesInterest rate environment and bond market opportunitiesU"
+          },
+          "resourceCategory": "Market Insights",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+            "alt": "Financial market charts",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/resources/retirement-planning-mistakes": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeResource",
+          "id": "resource-retirement-mistakes",
+          "title": "5 Retirement Planning Mistakes to Avoid",
+          "path": "/resources/retirement-planning-mistakes",
+          "body": {
+            "processed": "<p>Even diligent savers can make mistakes that derail their retirement plans. Here are the most common pitfalls we help clients avoid.</p><h2>Common Mistakes</h2><ul><li><strong>Starting too late</strong> - The power of compounding diminishes with each year you delay</li><li><strong>Underestimating healthcare costs</strong> - Plan for $300,000+ per couple in retirement healthcare</li><li><strong>Taking Social Security too early</strong> - Waiting can increase benefits by up to 77%</li><li><strong>Ignoring inflation</strong> - Your purchasing power will decline without proper planning</li><li><strong>No withdrawal strategy</strong> - The order in which you tap accounts matters for taxes</li></ul><p>Schedule a review with one of our advisors to ensure you are on the right track.</p>",
+            "summary": "Even diligent savers can make mistakes that derail their retirement plans. Here are the most common pitfalls we help clients avoid.Common MistakesStarting too late - The power of compounding diminishe"
+          },
+          "resourceCategory": "Retirement",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
+            "alt": "Retirement savings concept",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/resources/estate-planning-basics": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodeResource",
+          "id": "resource-estate-basics",
+          "title": "Estate Planning Essentials",
+          "path": "/resources/estate-planning-basics",
+          "body": {
+            "processed": "<p>Estate planning is not just for the ultra-wealthy. Everyone needs a plan to protect their family and assets. Here are the essential documents and strategies to consider.</p><h2>Essential Documents</h2><ul><li><strong>Will</strong> - Directs how your assets are distributed</li><li><strong>Revocable Trust</strong> - Avoids probate and provides privacy</li><li><strong>Power of Attorney</strong> - Designates someone to manage your finances</li><li><strong>Healthcare Directive</strong> - Specifies your medical care wishes</li></ul><h2>Beyond the Basics</h2><p>For larger estates, consider irrevocable trusts, charitable strategies, and business succession planning. Our advisors can help you determine which tools are right for your situation.</p>",
+            "summary": "Estate planning is not just for the ultra-wealthy. Everyone needs a plan to protect their family and assets. Here are the essential documents and strategies to consider.Essential DocumentsWill - Direc"
+          },
+          "resourceCategory": "Estate Planning",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+            "alt": "Legal documents and planning",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "/about": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "about-page",
+          "title": "About Summit Wealth Advisors",
+          "path": "/about",
+          "body": {
+            "processed": "<p>Summit Wealth Advisors was founded on the belief that everyone deserves access to sophisticated financial advice. As a fee-only, fiduciary advisory firm, we are legally obligated to put your interests first.</p><h2>Our Fiduciary Commitment</h2><p>Unlike brokers who earn commissions, we charge a transparent fee based on assets under management. This ensures our advice is always aligned with your best interests.</p><h2>Our Values</h2><ul><li><strong>Fiduciary First</strong> - Your interests always come before ours</li><li><strong>Evidence-Based</strong> - We rely on academic research, not market predictions</li><li><strong>Transparency</strong> - Clear fees, honest communication, no hidden costs</li><li><strong>Long-Term Focus</strong> - We build plans for decades, not quarters</li></ul>",
+            "summary": "Summit Wealth Advisors was founded on the belief that everyone deserves access to sophisticated financial advice. As a fee-only, fiduciary advisory firm, we are legally obligated to put your interests"
+          }
+        }
+      }
+    }
+  },
+  "/contact": {
+    "data": {
+      "route": {
+        "__typename": "RouteInternal",
+        "entity": {
+          "__typename": "NodePage",
+          "id": "contact-page",
+          "title": "Schedule a Meeting",
+          "path": "/contact",
+          "body": {
+            "processed": "<p>We offer a complimentary initial consultation to understand your financial situation and goals. There is no obligation and no pressure.</p><h2>Office Location</h2><p>Summit Wealth Advisors<br/>321 Wealth Avenue, 15th Floor<br/>Chicago, IL 60601</p><h2>Hours</h2><p>Monday - Friday: 8:00 AM - 5:00 PM<br/>Evening appointments available by request</p><h2>Contact</h2><p>Phone: (555) 456-7890<br/>Email: info@summitwealthadvisors.com</p>",
+            "summary": "We offer a complimentary initial consultation to understand your financial situation and goals. There is no obligation and no pressure.Office LocationSummit Wealth Advisors321 Wealth Avenue, 15th Floo"
+          }
+        }
+      }
+    }
+  }
+}

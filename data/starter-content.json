@@ -1,0 +1,240 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section, features, and call-to-action areas",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string", "description": "Main headline in the hero section" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string", "description": "Secondary text below the hero title" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text", "description": "Longer descriptive text for the hero section" },
+        { "id": "features_title", "label": "Features Section Title", "type": "string" },
+        { "id": "features_subtitle", "label": "Features Section Subtitle", "type": "string" },
+        { "id": "features_items", "label": "Feature Items", "type": "paragraph(feature_item)[]", "description": "List of feature highlight blocks" },
+        { "id": "cta_title", "label": "CTA Section Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA Text", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA Text", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "service",
+      "label": "Service",
+      "description": "Financial advisory services offered",
+      "body": true,
+      "fields": [
+        { "id": "minimum_investment", "label": "Minimum Investment", "type": "string", "description": "Minimum investment amount for this service" },
+        { "id": "image", "label": "Featured Image", "type": "image", "description": "Main image for the service" }
+      ]
+    },
+    {
+      "bundle": "advisor",
+      "label": "Advisor",
+      "description": "Financial advisors and wealth managers",
+      "body": true,
+      "fields": [
+        { "id": "specialty", "label": "Specialty", "type": "string", "description": "Area of financial expertise" },
+        { "id": "email", "label": "Email", "type": "string", "description": "Professional email address" },
+        { "id": "phone", "label": "Phone", "type": "string", "description": "Contact phone number" },
+        { "id": "photo", "label": "Photo", "type": "image", "description": "Professional headshot" },
+        { "id": "certifications", "label": "Certifications", "type": "string", "description": "Professional certifications" },
+        { "id": "experience_years", "label": "Years of Experience", "type": "integer", "description": "Number of years in financial services" }
+      ]
+    },
+    {
+      "bundle": "resource",
+      "label": "Resource",
+      "description": "Market insights, guides, and financial education",
+      "body": true,
+      "fields": [
+        { "id": "resource_category", "label": "Resource Category", "type": "string", "description": "Category for the resource" },
+        { "id": "image", "label": "Featured Image", "type": "image", "description": "Main image for the resource" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, contact, policies, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "feature_item",
+      "label": "Feature Item",
+      "description": "Individual feature highlight with icon, title, and description",
+      "fields": [
+        { "id": "icon", "label": "Icon", "type": "string", "description": "Lucide icon name" },
+        { "id": "title", "label": "Title", "type": "string!", "description": "Feature title (required)" },
+        { "id": "description", "label": "Description", "type": "text", "description": "Detailed description" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "feature-wealth", "type": "paragraph.feature_item",
+      "values": { "icon": "landmark", "title": "Wealth Management", "description": "Personalized investment strategies and portfolio management to grow and preserve your wealth over time." }
+    },
+    {
+      "id": "feature-retirement", "type": "paragraph.feature_item",
+      "values": { "icon": "sunset", "title": "Retirement Planning", "description": "Comprehensive retirement planning to ensure you can maintain your lifestyle and achieve your post-career goals." }
+    },
+    {
+      "id": "feature-estate", "type": "paragraph.feature_item",
+      "values": { "icon": "scroll", "title": "Estate Planning", "description": "Strategic estate planning to protect your legacy and ensure smooth wealth transfer to future generations." }
+    },
+    {
+      "id": "feature-tax", "type": "paragraph.feature_item",
+      "values": { "icon": "receipt", "title": "Tax Optimization", "description": "Tax-efficient investment strategies and planning to minimize your tax burden and maximize after-tax returns." }
+    },
+    {
+      "id": "feature-risk", "type": "paragraph.feature_item",
+      "values": { "icon": "shield", "title": "Risk Management", "description": "Comprehensive risk assessment and insurance planning to safeguard your financial well-being." }
+    },
+    {
+      "id": "feature-education", "type": "paragraph.feature_item",
+      "values": { "icon": "graduation-cap", "title": "Education Planning", "description": "529 plans and education savings strategies to fund your children's academic futures without compromising your goals." }
+    },
+    {
+      "id": "homepage", "type": "node.homepage", "path": "/homepage",
+      "values": {
+        "title": "Pinnacle Financial Advisors Homepage",
+        "hero_title": "Your Financial Future, Elevated",
+        "hero_subtitle": "Pinnacle Financial Advisors",
+        "hero_description": "<p>Fiduciary financial advisors dedicated to building and protecting your wealth through personalized strategies and disciplined investment management.</p>",
+        "features_title": "How We Help",
+        "features_subtitle": "Comprehensive financial planning tailored to your unique goals and circumstances",
+        "features_items": ["@feature-wealth", "@feature-retirement", "@feature-estate", "@feature-tax", "@feature-risk", "@feature-education"],
+        "cta_title": "Start Building Your Financial Future",
+        "cta_description": "<p>Schedule a complimentary consultation with one of our advisors. We will review your current situation and outline a path to your financial goals.</p>",
+        "cta_primary": "Schedule Meeting",
+        "cta_secondary": "Our Services"
+      }
+    },
+    {
+      "id": "service-wealth", "type": "node.service", "path": "/services/wealth-management",
+      "values": {
+        "title": "Wealth Management",
+        "body": "<p>Our wealth management service provides a holistic approach to growing and preserving your assets. We combine sophisticated investment strategies with comprehensive financial planning.</p><h2>Our Approach</h2><ul><li>Custom portfolio construction based on your goals and risk tolerance</li><li>Diversification across asset classes, sectors, and geographies</li><li>Regular rebalancing and tax-loss harvesting</li><li>Quarterly performance reviews and strategy adjustments</li><li>Access to institutional-quality investments</li></ul><h2>Investment Philosophy</h2><p>We believe in a disciplined, evidence-based approach to investing. Our portfolios are built on academic research and designed to capture long-term market returns while managing downside risk.</p>",
+        "minimum_investment": "$250,000",
+        "image": { "uri": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80", "alt": "Investment portfolio charts", "title": "Wealth Management" }
+      }
+    },
+    {
+      "id": "service-retirement", "type": "node.service", "path": "/services/retirement-planning",
+      "values": {
+        "title": "Retirement Planning",
+        "body": "<p>Whether retirement is decades away or just around the corner, our advisors create detailed plans to ensure you can live comfortably and pursue your passions in your post-career years.</p><h2>Planning Process</h2><ul><li>Retirement income needs analysis</li><li>Social Security optimization strategies</li><li>401(k), IRA, and Roth conversion planning</li><li>Healthcare cost projections and Medicare planning</li><li>Withdrawal strategy to minimize taxes</li></ul><h2>Ongoing Management</h2><p>Your retirement plan evolves with you. We conduct annual reviews and adjust your strategy as your circumstances and goals change.</p>",
+        "minimum_investment": "$100,000",
+        "image": { "uri": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80", "alt": "Couple planning retirement", "title": "Retirement Planning" }
+      }
+    },
+    {
+      "id": "service-estate", "type": "node.service", "path": "/services/estate-planning",
+      "values": {
+        "title": "Estate Planning",
+        "body": "<p>Protect your legacy with thoughtful estate planning. We work with your attorneys and CPAs to create a comprehensive plan that ensures your wealth transfers according to your wishes.</p><h2>Estate Planning Services</h2><ul><li>Trust and estate analysis</li><li>Charitable giving strategies</li><li>Business succession planning</li><li>Generational wealth transfer</li><li>Beneficiary designation reviews</li></ul><h2>Coordination</h2><p>We coordinate with your legal and tax advisors to ensure all elements of your estate plan work together seamlessly.</p>",
+        "minimum_investment": "$500,000",
+        "image": { "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80", "alt": "Estate planning documents", "title": "Estate Planning" }
+      }
+    },
+    {
+      "id": "service-tax", "type": "node.service", "path": "/services/tax-optimization",
+      "values": {
+        "title": "Tax Optimization",
+        "body": "<p>Minimize your tax burden with proactive tax planning strategies. We look beyond simple deductions to find opportunities that reduce your taxes year after year.</p><h2>Tax Strategies</h2><ul><li>Tax-loss harvesting across portfolios</li><li>Roth conversion analysis and planning</li><li>Charitable giving optimization (donor-advised funds, QCDs)</li><li>Capital gains management</li><li>Tax-efficient asset location strategies</li></ul><h2>Results</h2><p>Our clients typically save thousands in taxes annually through proactive planning. We work closely with your CPA to implement these strategies effectively.</p>",
+        "minimum_investment": "$100,000",
+        "image": { "uri": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80", "alt": "Tax planning documents", "title": "Tax Optimization" }
+      }
+    },
+    {
+      "id": "advisor-robert", "type": "node.advisor", "path": "/advisors/robert-sterling",
+      "values": {
+        "title": "Robert Sterling",
+        "body": "<p>Robert founded Pinnacle Financial Advisors with the vision of providing institutional-quality financial advice to individuals and families. He specializes in comprehensive wealth management for high-net-worth clients and brings a disciplined, research-based approach to investing.</p>",
+        "specialty": "Wealth Management & Portfolio Strategy",
+        "email": "robert@pinnaclefa.com",
+        "phone": "(555) 456-7890",
+        "photo": { "uri": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80", "alt": "Robert Sterling, Founder", "title": "Robert Sterling" },
+        "certifications": "CFP, CFA, CIMA",
+        "experience_years": 28
+      }
+    },
+    {
+      "id": "advisor-jennifer", "type": "node.advisor", "path": "/advisors/jennifer-hayes",
+      "values": {
+        "title": "Jennifer Hayes",
+        "body": "<p>Jennifer leads our retirement planning practice. She helps clients approaching retirement create detailed income plans, optimize Social Security benefits, and navigate the transition from accumulation to distribution. Her clients value her thorough approach and clear communication.</p>",
+        "specialty": "Retirement Planning & Income Strategy",
+        "email": "jennifer@pinnaclefa.com",
+        "phone": "(555) 456-7891",
+        "photo": { "uri": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80", "alt": "Jennifer Hayes, Senior Advisor", "title": "Jennifer Hayes" },
+        "certifications": "CFP, ChFC",
+        "experience_years": 18
+      }
+    },
+    {
+      "id": "advisor-michael", "type": "node.advisor", "path": "/advisors/michael-zhang",
+      "values": {
+        "title": "Michael Zhang",
+        "body": "<p>Michael specializes in estate planning and tax optimization for families with complex financial situations. He works closely with attorneys and CPAs to create integrated strategies that protect wealth across generations. His quantitative background enables precise tax planning analysis.</p>",
+        "specialty": "Estate Planning & Tax Strategy",
+        "email": "michael@pinnaclefa.com",
+        "phone": "(555) 456-7892",
+        "photo": { "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80", "alt": "Michael Zhang, Advisor", "title": "Michael Zhang" },
+        "certifications": "CFP, CPA/PFS",
+        "experience_years": 15
+      }
+    },
+    {
+      "id": "resource-market-outlook", "type": "node.resource", "path": "/resources/market-outlook-2025",
+      "values": {
+        "title": "2025 Market Outlook",
+        "body": "<p>Our investment committee shares their perspective on market conditions, economic trends, and portfolio positioning for the year ahead.</p><h2>Key Themes</h2><ul><li>Interest rate environment and bond market opportunities</li><li>US equity market valuations and earnings growth</li><li>International diversification benefits</li><li>Alternative investment opportunities</li></ul><p>We encourage clients to focus on long-term goals rather than short-term market movements. Your portfolio is designed to weather various market conditions.</p>",
+        "resource_category": "Market Insights",
+        "image": { "uri": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80", "alt": "Financial market charts", "title": "2025 Market Outlook" }
+      }
+    },
+    {
+      "id": "resource-retirement-mistakes", "type": "node.resource", "path": "/resources/retirement-planning-mistakes",
+      "values": {
+        "title": "5 Retirement Planning Mistakes to Avoid",
+        "body": "<p>Even diligent savers can make mistakes that derail their retirement plans. Here are the most common pitfalls we help clients avoid.</p><h2>Common Mistakes</h2><ul><li><strong>Starting too late</strong> - The power of compounding diminishes with each year you delay</li><li><strong>Underestimating healthcare costs</strong> - Plan for $300,000+ per couple in retirement healthcare</li><li><strong>Taking Social Security too early</strong> - Waiting can increase benefits by up to 77%</li><li><strong>Ignoring inflation</strong> - Your purchasing power will decline without proper planning</li><li><strong>No withdrawal strategy</strong> - The order in which you tap accounts matters for taxes</li></ul><p>Schedule a review with one of our advisors to ensure you are on the right track.</p>",
+        "resource_category": "Retirement",
+        "image": { "uri": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80", "alt": "Retirement savings concept", "title": "Retirement Planning Mistakes" }
+      }
+    },
+    {
+      "id": "resource-estate-basics", "type": "node.resource", "path": "/resources/estate-planning-basics",
+      "values": {
+        "title": "Estate Planning Essentials",
+        "body": "<p>Estate planning is not just for the ultra-wealthy. Everyone needs a plan to protect their family and assets. Here are the essential documents and strategies to consider.</p><h2>Essential Documents</h2><ul><li><strong>Will</strong> - Directs how your assets are distributed</li><li><strong>Revocable Trust</strong> - Avoids probate and provides privacy</li><li><strong>Power of Attorney</strong> - Designates someone to manage your finances</li><li><strong>Healthcare Directive</strong> - Specifies your medical care wishes</li></ul><h2>Beyond the Basics</h2><p>For larger estates, consider irrevocable trusts, charitable strategies, and business succession planning. Our advisors can help you determine which tools are right for your situation.</p>",
+        "resource_category": "Estate Planning",
+        "image": { "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80", "alt": "Legal documents and planning", "title": "Estate Planning Essentials" }
+      }
+    },
+    {
+      "id": "resource-tax-strategies", "type": "node.resource", "path": "/resources/year-end-tax-strategies",
+      "values": {
+        "title": "Year-End Tax Planning Strategies",
+        "body": "<p>The end of the year is a critical time for tax planning. These strategies can help reduce your tax bill for the current year and beyond.</p><h2>Before December 31</h2><ul><li>Harvest tax losses to offset capital gains</li><li>Maximize retirement plan contributions</li><li>Consider Roth conversions if in a lower tax bracket</li><li>Make charitable donations (consider bunching strategy)</li><li>Review required minimum distributions (RMDs)</li></ul><h2>Planning Ahead</h2><p>Year-end tax planning works best as part of a broader strategy. Talk to your advisor about integrating these moves into your overall financial plan.</p>",
+        "resource_category": "Tax Planning",
+        "image": { "uri": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80", "alt": "Tax planning documents and calculator", "title": "Year-End Tax Strategies" }
+      }
+    },
+    {
+      "id": "about-page", "type": "node.page", "path": "/about",
+      "values": {
+        "title": "About Pinnacle Financial Advisors",
+        "body": "<p>Pinnacle Financial Advisors was founded on the belief that everyone deserves access to sophisticated financial advice. As a fee-only, fiduciary advisory firm, we are legally obligated to put your interests first.</p><h2>Our Fiduciary Commitment</h2><p>Unlike brokers who earn commissions, we charge a transparent fee based on assets under management. This ensures our advice is always aligned with your best interests.</p><h2>Our Values</h2><ul><li><strong>Fiduciary First</strong> - Your interests always come before ours</li><li><strong>Evidence-Based</strong> - We rely on academic research, not market predictions</li><li><strong>Transparency</strong> - Clear fees, honest communication, no hidden costs</li><li><strong>Long-Term Focus</strong> - We build plans for decades, not quarters</li></ul>"
+      }
+    },
+    {
+      "id": "contact-page", "type": "node.page", "path": "/contact",
+      "values": {
+        "title": "Schedule a Meeting",
+        "body": "<p>We offer a complimentary initial consultation to understand your financial situation and goals. There is no obligation and no pressure.</p><h2>Office Location</h2><p>Pinnacle Financial Advisors<br/>321 Wealth Avenue, 15th Floor<br/>Chicago, IL 60601</p><h2>Hours</h2><p>Monday - Friday: 8:00 AM - 5:00 PM<br/>Evening appointments available by request</p><h2>Contact</h2><p>Phone: (555) 456-7890<br/>Email: info@pinnaclefa.com</p>"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "data": {
+    "nodeAdvisors": {
+      "__typename": "NodeAdvisorConnection",
+      "nodes": [
+        {
+          "__typename": "NodeAdvisor",
+          "id": "advisor-catherine",
+          "title": "Catherine Sterling",
+          "path": "/advisors/catherine-sterling",
+          "body": {
+            "processed": "<p>Catherine founded Summit Wealth Advisors with the vision of providing institutional-quality financial advice to individuals and families. She specializes in comprehensive wealth management for high-net-worth clients and brings a disciplined, research-based approach to investing.</p>",
+            "summary": "Catherine founded Summit Wealth Advisors with the vision of providing institutional-quality financial advice to individuals and families. She specializes in comprehensive wealth management for high-ne"
+          },
+          "specialty": "Wealth Management & Portfolio Strategy",
+          "email": "catherine@summitwealthadvisors.com",
+          "phone": "(555) 456-7890",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+            "alt": "Catherine Sterling, Founder",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "certifications": "CFP, CFA, CIMA",
+          "experienceYears": 28
+        },
+        {
+          "__typename": "NodeAdvisor",
+          "id": "advisor-richard",
+          "title": "Richard Hayes",
+          "path": "/advisors/richard-hayes",
+          "body": {
+            "processed": "<p>Richard leads our retirement planning practice. He helps clients approaching retirement create detailed income plans, optimize Social Security benefits, and navigate the transition from accumulation to distribution. His clients value his thorough approach and clear communication style.</p>",
+            "summary": "Richard leads our retirement planning practice. He helps clients approaching retirement create detailed income plans, optimize Social Security benefits, and navigate the transition from accumulation t"
+          },
+          "specialty": "Retirement Planning & Income Strategy",
+          "email": "richard@summitwealthadvisors.com",
+          "phone": "(555) 456-7891",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+            "alt": "Richard Hayes, Senior Advisor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "certifications": "CFP, ChFC",
+          "experienceYears": 20
+        },
+        {
+          "__typename": "NodeAdvisor",
+          "id": "advisor-anika",
+          "title": "Anika Patel",
+          "path": "/advisors/anika-patel",
+          "body": {
+            "processed": "<p>Anika specializes in estate planning and tax optimization for families with complex financial situations. She works closely with attorneys and CPAs to create integrated strategies that protect wealth across generations. Her quantitative background enables precise tax planning analysis.</p>",
+            "summary": "Anika specializes in estate planning and tax optimization for families with complex financial situations. She works closely with attorneys and CPAs to create integrated strategies that protect wealth "
+          },
+          "specialty": "Estate Planning & Tax Strategy",
+          "email": "anika@summitwealthadvisors.com",
+          "phone": "(555) 456-7892",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+            "alt": "Anika Patel, Advisor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "certifications": "CFP, CPA/PFS",
+          "experienceYears": 15
+        }
+      ]
+    }
+  }
+}

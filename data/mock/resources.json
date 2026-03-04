@@ -1,0 +1,120 @@
+{
+  "data": {
+    "nodeResources": {
+      "__typename": "NodeResourceConnection",
+      "nodes": [
+        {
+          "__typename": "NodeResource",
+          "id": "resource-market-outlook",
+          "title": "2026 Market Outlook",
+          "path": "/resources/market-outlook-2026",
+          "body": {
+            "processed": "<p>Our investment committee shares their perspective on market conditions, economic trends, and portfolio positioning for the year ahead.</p><h2>Key Themes</h2><ul><li>Interest rate environment and bond market opportunities</li><li>US equity market valuations and earnings growth</li><li>International diversification benefits</li><li>Alternative investment opportunities</li></ul><p>We encourage clients to focus on long-term goals rather than short-term market movements. Your portfolio is designed to weather various market conditions.</p>",
+            "summary": "Our investment committee shares their perspective on market conditions, economic trends, and portfolio positioning for the year ahead.Key ThemesInterest rate environment and bond market opportunitiesU"
+          },
+          "resourceCategory": "Market Insights",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+            "alt": "Financial market charts",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeResource",
+          "id": "resource-retirement-mistakes",
+          "title": "5 Retirement Planning Mistakes to Avoid",
+          "path": "/resources/retirement-planning-mistakes",
+          "body": {
+            "processed": "<p>Even diligent savers can make mistakes that derail their retirement plans. Here are the most common pitfalls we help clients avoid.</p><h2>Common Mistakes</h2><ul><li><strong>Starting too late</strong> - The power of compounding diminishes with each year you delay</li><li><strong>Underestimating healthcare costs</strong> - Plan for $300,000+ per couple in retirement healthcare</li><li><strong>Taking Social Security too early</strong> - Waiting can increase benefits by up to 77%</li><li><strong>Ignoring inflation</strong> - Your purchasing power will decline without proper planning</li><li><strong>No withdrawal strategy</strong> - The order in which you tap accounts matters for taxes</li></ul><p>Schedule a review with one of our advisors to ensure you are on the right track.</p>",
+            "summary": "Even diligent savers can make mistakes that derail their retirement plans. Here are the most common pitfalls we help clients avoid.Common MistakesStarting too late - The power of compounding diminishe"
+          },
+          "resourceCategory": "Retirement",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
+            "alt": "Retirement savings concept",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeResource",
+          "id": "resource-estate-basics",
+          "title": "Estate Planning Essentials",
+          "path": "/resources/estate-planning-basics",
+          "body": {
+            "processed": "<p>Estate planning is not just for the ultra-wealthy. Everyone needs a plan to protect their family and assets. Here are the essential documents and strategies to consider.</p><h2>Essential Documents</h2><ul><li><strong>Will</strong> - Directs how your assets are distributed</li><li><strong>Revocable Trust</strong> - Avoids probate and provides privacy</li><li><strong>Power of Attorney</strong> - Designates someone to manage your finances</li><li><strong>Healthcare Directive</strong> - Specifies your medical care wishes</li></ul><h2>Beyond the Basics</h2><p>For larger estates, consider irrevocable trusts, charitable strategies, and business succession planning. Our advisors can help you determine which tools are right for your situation.</p>",
+            "summary": "Estate planning is not just for the ultra-wealthy. Everyone needs a plan to protect their family and assets. Here are the essential documents and strategies to consider.Essential DocumentsWill - Direc"
+          },
+          "resourceCategory": "Estate Planning",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+            "alt": "Legal documents and planning",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Summit Wealth Advisors Homepage",
+          "path": "/homepage",
+          "heroTitle": "Your Financial Future, Elevated",
+          "heroSubtitle": "Summit Wealth Advisors",
+          "heroDescription": {
+            "processed": "<p>Fee-only fiduciary financial advisors dedicated to building and protecting your wealth through personalized strategies, disciplined investment management, and comprehensive financial planning.</p>",
+            "summary": "Fee-only fiduciary financial advisors dedicated to building and protecting your wealth through personalized strategies, disciplined investment management, and comprehensive financial planning."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-1",
+              "title": "",
+              "number": "$2.1B",
+              "label": "Assets Under Management"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-2",
+              "title": "",
+              "number": "850+",
+              "label": "Client Families"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-3",
+              "title": "",
+              "number": "98%",
+              "label": "Client Retention"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-4",
+              "title": "",
+              "number": "25+",
+              "label": "Years of Service"
+            }
+          ],
+          "featuredItemsTitle": "How We Help",
+          "ctaTitle": "Start Building Your Financial Future",
+          "ctaDescription": {
+            "processed": "<p>Schedule a complimentary consultation with one of our advisors. We will review your current situation and outline a clear path to your financial goals.</p>",
+            "summary": "Schedule a complimentary consultation with one of our advisors. We will review your current situation and outline a clear path to your financial goals."
+          },
+          "ctaPrimary": "Schedule a Meeting",
+          "ctaSecondary": "Our Services"
+        }
+      ]
+    }
+  }
+}
