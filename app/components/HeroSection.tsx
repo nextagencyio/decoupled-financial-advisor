@@ -11,8 +11,16 @@ export default function HeroSection({ homepageContent }: HeroSectionProps) {
   const subtitle = (homepageContent as any)?.heroSubtitle || 'Building Generational Wealth'
 
   return (
-    <section className="bg-gradient-to-br from-primary-800 via-primary-900 to-primary-950 text-white pt-32 pb-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary-800 via-primary-900 to-primary-950 text-white pt-32 pb-24">
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1463320726281-696a485928c7?w=2000&q=80&fit=crop"
+          alt="Financial planning"
+          className="h-full w-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/85 to-primary-800/75" />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <div className="text-accent-400 text-sm font-semibold tracking-wider uppercase mb-4">
             Fee-Only Fiduciary Advisors
