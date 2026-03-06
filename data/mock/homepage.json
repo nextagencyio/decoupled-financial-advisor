@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-1",
               "title": "",
-              "number": "$2.1B",
+              "number": "$2.1B", "value": "$2.1B",
               "label": "Assets Under Management"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-2",
               "title": "",
-              "number": "850+",
+              "number": "850+", "value": "850+",
               "label": "Client Families"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-3",
               "title": "",
-              "number": "98%",
+              "number": "98%", "value": "98%",
               "label": "Client Retention"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-4",
               "title": "",
-              "number": "25+",
+              "number": "25+", "value": "25+",
               "label": "Years of Service"
             }
           ],
