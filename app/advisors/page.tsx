@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 async function getAdvisors() {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_ADVISORS, { first: 50 })
+    const data = await client.raw(GET_ADVISORS, { first: 50 })
     return data?.nodeAdvisors?.nodes || []
   } catch (error) {
     console.error('Error fetching advisors:', error)
@@ -56,7 +56,7 @@ export default async function AdvisorsPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {items.map((item) => (
+              {items.map((item: any) => (
                 <AdvisorCard key={item.id} item={item} />
               ))}
             </div>

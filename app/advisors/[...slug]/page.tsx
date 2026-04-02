@@ -24,7 +24,7 @@ interface AdvisorByPathData {
 async function getAdvisor(path: string): Promise<DrupalAdvisor | null> {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_ADVISOR_BY_PATH, { path })
+    const data = await client.raw(GET_ADVISOR_BY_PATH, { path })
     return data?.route?.entity || null
   } catch (error) {
     console.error('Error fetching advisor:', error)
