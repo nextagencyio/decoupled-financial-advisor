@@ -82,11 +82,19 @@ export const GET_HOMEPAGE_DATA = gql`
         path
         heroTitle
         heroSubtitle
-        heroDescription { processed summary }
-        statsItems { ... on ParagraphStatItem { id title description { processed } icon } }
-        featuredItemsTitle
+        heroDescription { processed }
+        featuresTitle
+        featuresSubtitle
+        featuresItems {
+          ... on ParagraphFeatureItem {
+            id
+            title
+            description { processed }
+            icon
+          }
+        }
         ctaTitle
-        ctaDescription { processed summary }
+        ctaDescription { processed }
         ctaPrimary
         ctaSecondary
       }
@@ -106,55 +114,52 @@ export const GET_NODE_BY_PATH = gql`
               processed
             }
           }
-          ... on NodeArticle {
+          ... on NodeService {
             id
             title
-            body {
-              processed
-            }
-            created {
-              timestamp
-            }
-            changed {
-              timestamp
-            }
-            image {
-              url
-              alt
-              width
-              height
-              variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
-                name
-                url
-                width
-                height
-              }
-            }
+            path
+            body { processed summary }
+            minimumInvestment
+            image { url alt width height }
+          }
+          ... on NodeAdvisor {
+            id
+            title
+            path
+            body { processed summary }
+            specialty
+            email
+            phone
+            photo { url alt width height }
+            certifications
+            experienceYears
+          }
+          ... on NodeResource {
+            id
+            title
+            path
+            body { processed summary }
+            resourceCategory
+            image { url alt width height }
           }
           ... on NodeHomepage {
             id
             title
             heroTitle
             heroSubtitle
-            heroDescription {
-              processed
-            }
+            heroDescription { processed }
             featuresTitle
             featuresSubtitle
             featuresItems {
               ... on ParagraphFeatureItem {
                 id
                 title
-                description {
-                  processed
-                }
+                description { processed }
                 icon
               }
             }
             ctaTitle
-            ctaDescription {
-              processed
-            }
+            ctaDescription { processed }
             ctaPrimary
             ctaSecondary
           }
